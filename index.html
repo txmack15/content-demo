@@ -34,7 +34,6 @@
 
   .mono { font-family: 'JetBrains Mono', monospace; }
 
-  /* background texture */
   .grid-overlay {
     position: fixed;
     inset: 0;
@@ -68,7 +67,6 @@
     padding: 72px 24px 100px;
   }
 
-  /* header */
   header {
     text-align: center;
     margin-bottom: 56px;
@@ -100,7 +98,6 @@
     margin: 0 auto;
   }
 
-  /* game picker */
   .picker-label {
     font-family: 'JetBrains Mono', monospace;
     font-size: 12px;
@@ -163,7 +160,6 @@
     color: var(--text-low);
   }
 
-  /* results area */
   .results {
     display: none;
   }
@@ -267,7 +263,6 @@
     line-height: 1.5;
   }
 
-  /* CTA */
   .cta-block {
     margin-top: 48px;
     text-align: center;
@@ -371,14 +366,13 @@
 
     <div class="cta-block">
       <p class="cta-text">This is what I build for ECHL, MiLB, and sports media front offices, tuned to how your team actually works.</p>
-      <a href="https://trevormack.carrd.co" class="cta-button">See how this works for your team</a>
+      <a href="mailto:txmack15@gmail.com?subject=Saw%20your%20live%20demo" class="cta-button">See how this works for your team</a>
     </div>
 
     <div class="disclaimer mono">SAMPLE DATA · fictional teams and players, generated live for demonstration</div>
   </div>
 
 <script>
-  // Replace with your actual n8n production webhook URL
   const WEBHOOK_URL = "https://tmack15.app.n8n.cloud/webhook/a0583890-5230-4d86-a77f-37c2d970f2c8";
 
   const buttons = document.querySelectorAll('.game-btn');
@@ -420,9 +414,9 @@
         loading.classList.remove('visible');
         outputBlock.classList.add('visible');
         document.getElementById('fieldRecap').textContent = "Something went wrong generating this. Try another sample game, or refresh and try again.";
-        document.getElementById('fieldX').textContent = "—";
-        document.getElementById('fieldInstagram').textContent = "—";
-        document.getElementById('fieldShort').textContent = "—";
+        document.getElementById('fieldX').textContent = "Not available";
+        document.getElementById('fieldInstagram').textContent = "Not available";
+        document.getElementById('fieldShort').textContent = "Not available";
       }
     });
   });
